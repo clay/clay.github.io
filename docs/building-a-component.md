@@ -9,7 +9,7 @@ sidebar_label: Building A Component
 This page descibes building a component. Before looking at the files that constitute a component [it's a good idea to read about what a component is](components.md). If you feel good about those concepts then let's outline a few basics about the component structure:
 
 - A component must live in the `components` directory at the root of your Clay instance
-- The directory name the omponent lives in will be the name of the component
+- The directory name the component lives in will be the name of the component
 - Your component's name should be [kebab case](http://wiki.c2.com/?KebabCase)
 
 ## Anatomy of a Component
@@ -29,7 +29,7 @@ my-component
 
 Schemas (or schemata) are the main connective tissue between the REST API and [Kiln](glossary.md#kiln). The schema of a component defines what kinds of editable fields components have as well as how those fields are grouped. When creating a component for the first time *a schema.yml* file is required for the component to be accessible via it's REST endpoint.
 
-Documentation [exists describing the Kiln API for component editing](https://claycms.gitbook.io/kiln/kiln-fundamentals/components/editing-components) and what declarations are allowed in your schema file. For the purpose. For the purpose of this quick intro ensure the `_description` field is added to your schema with a short description on what your building.
+Documentation [exists describing the Kiln API for component editing](https://claycms.gitbook.io/kiln/kiln-fundamentals/components/editing-components) and what declarations are allowed in your schema file. For the purpose of this quick intro ensure the `_description` field is added to your schema with a short description on what your building.
 
 ```yaml
 _description: |
@@ -56,7 +56,7 @@ _components:
 
 ### Model.js
 
-This file allow components to perform logic on their data before saving and rendering. This file exposes two methods which have the exact same function signature:
+This file allows components to perform logic on their data before saving and rendering. This file exposes two methods which have the exact same function signature:
 
 - `save`: this function is called when the data for a component is saved.
 - `render`: this function is called after the data has been pulled from the database but before the data has been templated by a renderer.
@@ -87,7 +87,7 @@ module.exports.save = (uri, data, locals) => {
 
 ### Client.js
 
-This file is simply the client-side controller for components when rendered as HTML. This will must export one function which will receive the DOM node for _each instance of the component on the page_. If your component appears in four different places on the page it will be called once for each instance.
+This file is simply the client-side controller for components when rendered as HTML. This will export one function which will receive the DOM node for _each instance of the component on the page_. If your component appears in four different places on the page it will be called once for each instance.
 
 Example:
 
@@ -106,8 +106,8 @@ Finally, your template is a [Handlebars](https://handlebarsjs.com/expressions.ht
 Templates have a [few assumptions built into them by Kiln](https://handlebarsjs.com/expressions.html) which we will quickly outline:
 
 - A template has only one root element if inside the `body` of the HTML document
-- The root DOM element has a `data-uri` property on it's root element
-- If in the `head` of the page an HTML comment is included with the `data-uri` attribute defined
+- The root DOM element has a `data-uri` property on its root element
+- If in the `head` of the page, an HTML comment is included with the `data-uri` attribute defined
 
 Examples:
 
