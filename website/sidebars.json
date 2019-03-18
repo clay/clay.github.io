@@ -1,0 +1,17 @@
+{
+  "docs": {
+    "Getting Started": [
+      "getting-started",
+      "building-a-component"
+    ],
+    "Clay Data Structures": [
+      "components",
+      "pages",
+      "layouts",
+      "uris",
+      "lists",
+      "users"
+    ],
+    "Helpful Links": ["glossary"]
+  }
+}
