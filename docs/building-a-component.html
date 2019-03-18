@@ -60,7 +60,7 @@
 <p>This page descibes building a component. Before looking at the files that constitute a component <a href="/docs/components">it's a good idea to read about what a component is</a>. If you feel good about those concepts then let's outline a few basics about the component structure:</p>
 <ul>
 <li>A component must live in the <code>components</code> directory at the root of your Clay instance</li>
-<li>The directory name the omponent lives in will be the name of the component</li>
+<li>The directory name the component lives in will be the name of the component</li>
 <li>Your component's name should be <a href="http://wiki.c2.com/?KebabCase">kebab case</a></li>
 </ul>
 <h2><a class="anchor" aria-hidden="true" id="anatomy-of-a-component"></a><a href="#anatomy-of-a-component" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Anatomy of a Component</h2>
@@ -74,7 +74,7 @@
 </code></pre>
 <h3><a class="anchor" aria-hidden="true" id="schemayml"></a><a href="#schemayml" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Schema.yml</h3>
 <p>Schemas (or schemata) are the main connective tissue between the REST API and <a href="/docs/glossary#kiln">Kiln</a>. The schema of a component defines what kinds of editable fields components have as well as how those fields are grouped. When creating a component for the first time <em>a schema.yml</em> file is required for the component to be accessible via it's REST endpoint.</p>
-<p>Documentation <a href="https://claycms.gitbook.io/kiln/kiln-fundamentals/components/editing-components">exists describing the Kiln API for component editing</a> and what declarations are allowed in your schema file. For the purpose. For the purpose of this quick intro ensure the <code>_description</code> field is added to your schema with a short description on what your building.</p>
+<p>Documentation <a href="https://claycms.gitbook.io/kiln/kiln-fundamentals/components/editing-components">exists describing the Kiln API for component editing</a> and what declarations are allowed in your schema file. For the purpose of this quick intro ensure the <code>_description</code> field is added to your schema with a short description on what your building.</p>
 <pre><code class="hljs css language-yaml"><span class="hljs-attr">_description:</span> <span class="hljs-string">|
   My cool component!
 </span></code></pre>
@@ -90,7 +90,7 @@
 </code></pre>
 <hr>
 <h3><a class="anchor" aria-hidden="true" id="modeljs"></a><a href="#modeljs" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Model.js</h3>
-<p>This file allow components to perform logic on their data before saving and rendering. This file exposes two methods which have the exact same function signature:</p>
+<p>This file allows components to perform logic on their data before saving and rendering. This file exposes two methods which have the exact same function signature:</p>
 <ul>
 <li><code>save</code>: this function is called when the data for a component is saved.</li>
 <li><code>render</code>: this function is called after the data has been pulled from the database but before the data has been templated by a renderer.</li>
@@ -115,7 +115,7 @@
 </code></pre>
 <hr>
 <h3><a class="anchor" aria-hidden="true" id="clientjs"></a><a href="#clientjs" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Client.js</h3>
-<p>This file is simply the client-side controller for components when rendered as HTML. This will must export one function which will receive the DOM node for <em>each instance of the component on the page</em>. If your component appears in four different places on the page it will be called once for each instance.</p>
+<p>This file is simply the client-side controller for components when rendered as HTML. This will export one function which will receive the DOM node for <em>each instance of the component on the page</em>. If your component appears in four different places on the page it will be called once for each instance.</p>
 <p>Example:</p>
 <pre><code class="hljs css language-javascript"><span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-params">el</span> =&gt;</span> {
   <span class="hljs-built_in">console</span>.log(el); <span class="hljs-comment">// Will print a DOM element for each component instance on the page</span>
@@ -127,8 +127,8 @@
 <p>Templates have a <a href="https://handlebarsjs.com/expressions.html">few assumptions built into them by Kiln</a> which we will quickly outline:</p>
 <ul>
 <li>A template has only one root element if inside the <code>body</code> of the HTML document</li>
-<li>The root DOM element has a <code>data-uri</code> property on it's root element</li>
-<li>If in the <code>head</code> of the page an HTML comment is included with the <code>data-uri</code> attribute defined</li>
+<li>The root DOM element has a <code>data-uri</code> property on its root element</li>
+<li>If in the <code>head</code> of the page, an HTML comment is included with the <code>data-uri</code> attribute defined</li>
 </ul>
 <p>Examples:</p>
 <pre><code class="hljs css language-html"><span class="hljs-comment">&lt;!-- data-uri="{{ default _ref _self}}" --&gt;</span>
