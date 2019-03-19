@@ -32,4 +32,4 @@ Our platform team is growing! We are happy to have two new developers in our Tea
 
 ### Upcoming
 
-More open source compments!
+More open source components!
