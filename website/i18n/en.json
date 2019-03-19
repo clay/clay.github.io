@@ -40,6 +40,10 @@
       "users": {
         "title": "Users",
         "sidebar_label": "Users"
+      },
+      "whatsnew": {
+        "title": "Clay Recaps",
+        "sidebar_label": "Clay Recaps"
       }
     },
     "links": {
@@ -49,7 +53,8 @@
     "categories": {
       "Getting Started": "Getting Started",
       "Clay Data Structures": "Clay Data Structures",
-      "Helpful Links": "Helpful Links"
+      "Helpful Links": "Helpful Links",
+      "Fresh Out of the Kiln": "Fresh Out of the Kiln"
     }
   },
   "pages-strings": {
