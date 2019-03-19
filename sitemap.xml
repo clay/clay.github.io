@@ -10,4 +10,5 @@
 <url> <loc>https://clay.github.io/docs/pages</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://clay.github.io/docs/pages" /> </url>
 <url> <loc>https://clay.github.io/docs/uris</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://clay.github.io/docs/uris" /> </url>
 <url> <loc>https://clay.github.io/docs/users</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://clay.github.io/docs/users" /> </url>
+<url> <loc>https://clay.github.io/docs/quartersummary</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://clay.github.io/docs/quartersummary" /> </url>
 </urlset>
