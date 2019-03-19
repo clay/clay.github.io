@@ -6,7 +6,7 @@ sidebar_label: Clay Recaps
 
 # What's Heating!
 
-Since the beginning of this year Clay Platform team have been working on a couple of things and we wanted to share them with you. 
+Since the beginning of this year, Clay Platform team have been working on a couple of things and we want to share them with you. 
 
 Here a few of our favorites:
 
