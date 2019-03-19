@@ -24,12 +24,12 @@ Pyxis is an Asset Management System built in NodeJs that uses Sharp for fast ima
 
 ### Amphora Authentication
 
-A module to offer autenthication in Clay.
+A module to offer authentication in Clay.
 
 ### New in the Tribe
 
-Our platform team is growing! We are happy to have two new developers in our Team . We Welcome you [Scott](https://github.com/scottnash) and [James](https://github.com/james-owen)!!!
+Our platform team is growing! We are happy to have two new developers in our Team. We Welcome you [Scott](https://github.com/scottnash) and [James](https://github.com/james-owen)!!!
 
 ### Upcoming
 
-More open source compments!
+More open source components!
