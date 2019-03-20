@@ -10,7 +10,7 @@ sidebar_label: Glossary
 
 ## Amphora
 
-Amphora is the data composer and REST API of Clay. It's core responsibilities include:
+Amphora is the data composer and REST API of Clay. Its core responsibilities include:
 
 - Assigning core routes for each data structure
 - Composing JSON data when a request comes in
@@ -25,7 +25,7 @@ Amphora is the data composer and REST API of Clay. It's core responsibilities in
 
 The supported HTML renderer for Clay. It receives data from [Amphora](#amphora) and uses Handlebars templates to render the data.
 
-It's also helps get data from the server to [Kiln](#kiln) when the user is in edit mode.
+It also helps get data from the server to [Kiln](#kiln) when the user is in edit mode.
 
 <hr/>
 
