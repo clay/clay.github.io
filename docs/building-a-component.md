@@ -29,7 +29,7 @@ my-component
 
 Schemas (or schemata) are the main connective tissue between the REST API and [Kiln](glossary.md#kiln). The schema of a component defines what kinds of editable fields components have as well as how those fields are grouped. When creating a component for the first time *a schema.yml* file is required for the component to be accessible via it's REST endpoint.
 
-Documentation [exists describing the Kiln API for component editing](https://claycms.gitbook.io/kiln/kiln-fundamentals/components/editing-components) and what declarations are allowed in your schema file. For the purpose of this quick intro ensure the `_description` field is added to your schema with a short description on what your building.
+Documentation [exists describing the Kiln API for component editing](https://claycms.gitbook.io/kiln/kiln-fundamentals/components/editing-components) and what declarations are allowed in your schema file. For the purpose of this quick intro ensure the `_description` field is added to your schema with a short description on what you're building.
 
 ```yaml
 _description: |
