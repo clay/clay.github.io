@@ -10,10 +10,14 @@ sidebar_label: Layouts
 > In all versions of Amphora before v7.x layouts are managed in the /components directory inside of your Clay instance. In v7.x and above the layouts are managed in their own directory, /layouts
 A layout is shared between multiple pages. Whenever the structure of a page needs to be different, then you should create a new layout.
 
-Layouts have all the same affordances as components but serve a much more specific purpose since they are required as part of a page.
+Layouts have all the same affordances as components, but there are a few important characteristics of layouts:
+* Each page must have exactly one layout
+* Each layout references a group of components which are added to the body of the page on composition
+* Layouts often subscribe to properties on an instance of a page (the title, for example), via cross-component communication.
 
 ## Page Areas
-Layouts are unique because they allow for data from a page to be stitched into the layout during composition time. The areas where a page's data can be merged into the layout's data are called **page areas**. Page areas are signified in the layout data by a string which references a [component-list on a page](https://claycms.gitbook.io/clay/clay-data-structures/pages#page-specific-data).
+Layouts are unique because they reference properties in a page, which are stitched into the layout during composition time. The areas where a page's data can be merged into the layout's data are called **page areas**. Page areas are signified in the layout by a `_ref` property whose value is a string which references a [component-list on a page](https://claycms.gitbook.io/clay/clay-data-structures/pages#page-specific-data).
+
 For example:
 
 ```js
@@ -30,7 +34,7 @@ For example:
 {
     head: [{
         _ref: "domain.com/_components/meta-title/instances/default"
-    }], 
+    }],
     main: "main",
     foot: [{
         _ref: "domain.com/_components/footer/instances/default"
@@ -44,7 +48,7 @@ During composition of the page for rendering the data from the page will be merg
 {
     head: [{
         _ref: "domain.com/_components/meta-title/instances/default"
-    }], 
+    }],
     main: [{
         _ref: "domain.com/_components/post/instances/good-post"
     }]
