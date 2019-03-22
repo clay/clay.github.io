@@ -84,7 +84,7 @@ Kiln is actually just a component itself and abides by the same API's as any oth
 
 ## Locals
 
-This object is passed to component's model.js functions and contains information about the request that is causing a component to be rendered/save. The following properties are available:
+This object is passed to component's model.js functions and contains information about the request that is causing a component to be rendered/saved. The following properties are available:
 
 - `url` (String): the url of the request. Can be a specific component instance, a page uri or a public url
 - `edit` (Boolean): a flag indicating if the request is coming from an authenticated user or not

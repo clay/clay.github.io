@@ -27,9 +27,9 @@ my-component
 
 ### Schema.yml
 
-Schemas (or schemata) are the main connective tissue between the REST API and [Kiln](glossary.md#kiln). The schema of a component defines what kinds of editable fields components have as well as how those fields are grouped. When creating a component for the first time *a schema.yml* file is required for the component to be accessible via it's REST endpoint.
+Schemas (or schemata) are the main connective tissue between the REST API and [Kiln](glossary.md#kiln). The schema of a component defines what kinds of editable fields components have as well as how those fields are grouped. When creating a component for the first time, a schema.yml file is required for the component to be accessible via its REST endpoint.
 
-Documentation [exists describing the Kiln API for component editing](https://claycms.gitbook.io/kiln/kiln-fundamentals/components/editing-components) and what declarations are allowed in your schema file. For the purpose of this quick intro ensure the `_description` field is added to your schema with a short description on what your building.
+Documentation [exists describing the Kiln API for component editing](https://claycms.gitbook.io/kiln/kiln-fundamentals/components/editing-components) and what declarations are allowed in your schema file. For the purpose of this quick intro ensure the `_description` field is added to your schema with a short description on what you're building.
 
 ```yaml
 _description: |
@@ -63,11 +63,11 @@ This file allows components to perform logic on their data before saving and ren
 
 Both of these functions receive the following data:
 
-- `ref` (String): the uri of the component
+- `uri` (String): the uri of the component
 - `data` (Object): the component instance's data
 - `locals` (Object): an object [containing information about the request](glossary#locals)
 
-Both of these functions must return _either an Object or a Promise which resolves an Object_ whose value is the data for the component. On a `save` the Object will be written to the database and on a `render` the Object will be passed to the data composer. Both the save() and render() methods are optional, as many components require either one or the other.
+Both of these functions must return _either an Object or a Promise which resolves an Object_ whose value is the data for the component. On a `save` the Object will be written to the database and on a `render` the Object will be passed to the data composer. Both the save() and render() methods are optional.
 
 Example:
 
