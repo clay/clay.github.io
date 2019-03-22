@@ -52,7 +52,7 @@ my-docusaurus
 ```
 
 # Publish the website
-The Claycli website will live on GitHub page. You just need to run the following commands:
+The Clay website will live on GitHub page. You just need to run the following commands:
 ```
 $ yarn build
 ```
@@ -61,7 +61,7 @@ or
 $ npm run build
 ```
 
-Then you just need to deploy the static files generated. These files will be pushed to the `gh-page` branch.
+Then you just need to deploy the static files generated. These files will be pushed to the `master` branch.
 ```
 $ yarn deploy
 ```
