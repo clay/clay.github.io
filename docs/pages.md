@@ -5,8 +5,8 @@ sidebar_label: Pages
 ---
 ---
 
-Overview
-Pages are a top-level data structure that only contains lists of components, they do not contain data themselves. Each list of components is called a ***page area*** and there is no limit for the number of page areas that can exist on a single page. A page has only one required property, `layout`, which must reference a valid instance of a layout. The layout instance that the page references will be the shell that the data specific to a page is injected into when rendering.
+## Overview
+Pages are a top-level data structure that only contains lists of components—they do not contain data themselves. Each list of components is called a ***page area*** and there is no limit for the number of page areas that can exist on a single page. A page has only one required property, `layout`, which must reference a valid instance of a layout. The layout instance that the page references will be the shell that the data specific to a page is injected into when rendering.
 
 For more details on interacting with the pages API, see the Amphora documentation around pages (coming soon)
 

@@ -7,7 +7,7 @@ sidebar_label: Layouts
 ---
 
 ## Overview
-> In all versions of Amphora before v7.x layouts are managed in the /components directory inside of your Clay instance. In v7.x and above the layouts are managed in their own directory, /layouts
+> In all versions of Amphora before v7.x layouts are managed in the /components directory inside of your Clay instance. In v7.x and above the layouts are managed in their own directory, /layouts.
 A layout is shared between multiple pages. Whenever the structure of a page needs to be different, then you should create a new layout.
 
 Layouts have all the same affordances as components but serve a much more specific purpose since they are required as part of a page.
@@ -30,7 +30,7 @@ For example:
 {
     head: [{
         _ref: "domain.com/_components/meta-title/instances/default"
-    }], 
+    }],
     main: "main",
     foot: [{
         _ref: "domain.com/_components/footer/instances/default"
@@ -44,7 +44,7 @@ During composition of the page for rendering the data from the page will be merg
 {
     head: [{
         _ref: "domain.com/_components/meta-title/instances/default"
-    }], 
+    }],
     main: [{
         _ref: "domain.com/_components/post/instances/good-post"
     }]
