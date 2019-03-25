@@ -11,12 +11,12 @@ sidebar_label: Layouts
 A layout is shared between multiple pages. Whenever the structure of a page needs to be different, then you should create a new layout.
 
 Layouts have all the same affordances as components, but there are a few important characteristics of layouts:
-* Each page must have exactly one layout
-* Each layout references a group of components which are added to the body of the page on composition
-* Layouts often subscribe to properties on an instance of a page (the title, for example), via cross-component communication.
+* Each page must have a reference to exactly one layout instance
+* Layouts have Page Areas
+* Layouts have their own metadata
 
 ## Page Areas
-Layouts are unique because they reference properties in a page, which are stitched into the layout during composition time. The areas where a page's data can be merged into the layout's data are called **page areas**. Page areas are signified in the layout by a `_ref` property whose value is a string which references a [component-list on a page](https://claycms.gitbook.io/clay/clay-data-structures/pages#page-specific-data).
+Layouts are unique because they can contain placeholders for properties on a page that are filled during composition. The areas where a page's data can be merged into the layout's data are called **page areas**. The reference to a page area is simply a `_ref` property whose value is a string that references a [component-list on a page](https://claycms.gitbook.io/clay/clay-data-structures/pages#page-specific-data).
 
 For example:
 
@@ -63,7 +63,7 @@ During composition of the page for rendering the data from the page will be merg
 ---
 
 ## Defining Page Areas For Editing
-While referencing data from a page works by setting a property in the layout to the same value as a component-list in the page data, there's a little more that has to be done so that Kiln knows how to edit page areas properly. For more detailed information, [see the Kiln docs](http://nymag.com/intelligencer/2018/08/the-nfls-back-and-so-are-trumps-attacks-on-players.html?gtm=top&gtm=top), but below is a brief overview.
+While referencing data from a page works by setting a property in the layout to the same value as a component-list in the page data, there's a little more that has to be done so that Kiln knows how to edit page areas properly. For more detailed information, [see the Kiln docs](https://claycms.gitbook.io/kiln/kiln-fundamentals/components/manipulating-components), but below is a brief overview.
 ```js
 main:
   _componentList:
