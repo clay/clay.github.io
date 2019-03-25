@@ -73,7 +73,7 @@
   └── template.hbs
 </code></pre>
 <h3><a class="anchor" aria-hidden="true" id="schemayml"></a><a href="#schemayml" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Schema.yml</h3>
-<p>Schemas (or schemata) are the main connective tissue between the REST API and <a href="/docs/glossary#kiln">Kiln</a>. The schema of a component defines what kinds of editable fields components have as well as how those fields are grouped. When creating a component for the first time <em>a schema.yml</em> file is required for the component to be accessible via it's REST endpoint.</p>
+<p>Schemas (or schemata) are the main connective tissue between the REST API and <a href="/docs/glossary#kiln">Kiln</a>. The schema of a component defines what kinds of editable fields components have as well as how those fields are grouped. When creating a component for the first time, a schema.yml file is required for the component to be accessible via its REST endpoint.</p>
 <p>Documentation <a href="https://claycms.gitbook.io/kiln/kiln-fundamentals/components/editing-components">exists describing the Kiln API for component editing</a> and what declarations are allowed in your schema file. For the purpose of this quick intro ensure the <code>_description</code> field is added to your schema with a short description on what you're building.</p>
 <pre><code class="hljs css language-yaml"><span class="hljs-attr">_description:</span> <span class="hljs-string">|
   My cool component!
@@ -97,11 +97,11 @@
 </ul>
 <p>Both of these functions receive the following data:</p>
 <ul>
-<li><code>ref</code> (String): the uri of the component</li>
+<li><code>uri</code> (String): the uri of the component</li>
 <li><code>data</code> (Object): the component instance's data</li>
 <li><code>locals</code> (Object): an object <a href="glossary#locals">containing information about the request</a></li>
 </ul>
-<p>Both of these functions must return <em>either an Object or a Promise which resolves an Object</em> whose value is the data for the component. On a <code>save</code> the Object will be written to the database and on a <code>render</code> the Object will be passed to the data composer. Both the save() and render() methods are optional, as many components require either one or the other.</p>
+<p>Both of these functions must return <em>either an Object or a Promise which resolves an Object</em> whose value is the data for the component. On a <code>save</code> the Object will be written to the database and on a <code>render</code> the Object will be passed to the data composer. Both the save() and render() methods are optional.</p>
 <p>Example:</p>
 <pre><code class="hljs css language-javascript"><span class="hljs-built_in">module</span>.exports.render = <span class="hljs-function">(<span class="hljs-params">uri, data, locals</span>) =&gt;</span> {
   <span class="hljs-comment">// ...</span>
