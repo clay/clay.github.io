@@ -40,4 +40,4 @@ Found at: /_users/dXNlckBnb29nbGUuY29tQGdvb2dsZQ==
 }
 ```
 
-The user's id is a Base64 encoded string of the `<username>@<provider` and the authentication level is used to define permissions when editing content via [Kiln](https://claycms.gitbook.io/kiln).
+The user's id is a Base64 encoded string of the `<username>@<provider` and the authentication level is used to define permissions when editing content via [Kiln](https://docs.clayplatform.com/clay-kiln/docs/intro).

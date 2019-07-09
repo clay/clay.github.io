@@ -13,7 +13,7 @@ For more details on interacting with the pages API, see the Amphora documentatio
 ---
 
 ## Page Specific Data
-All data specific to a page should be an Array of component instances. These component instances will be rendered on the page in a [component-list](https://claycms.gitbook.io/kiln/kiln-fundamentals/components/manipulating-components#component-lists)  inside of the layout's template, which is discussed more in the Layouts documentation.
+All data specific to a page should be an Array of component instances. These component instances will be rendered on the page in a [component-list](https://docs.clayplatform.com/clay-kiln/docs/manipulating_components#component-lists)  inside of the layout's template, which is discussed more in the Layouts documentation.
 
 It should be noted that the order of the component instances inside the Array will determine the order in which the component data is rendered in each component-list, but the order of the properties in the page data does not matter at all. The DOM flow (when talking about HTML pages) is determined by the layout's template, not the page data.
 
