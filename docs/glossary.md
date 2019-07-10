@@ -6,7 +6,7 @@ sidebar_label: Glossary
 
 > Below is a list of terms commonly used in Clay that are helpful to know when discussing the system.
 
-<hr/>
+---
 
 ## Amphora
 
@@ -19,7 +19,9 @@ Amphora is the data composer and REST API of Clay. Its core responsibilities inc
 - Discovering each plugin available in an instance of Clay
 - Migrating component data as components iterate over time
 
-<hr/>
+You can get more details on our [Amphora documentation](https://docs.clayplatform.com/amphora/docs/intro)
+
+---
 
 ## Amphora HTML
 
@@ -27,13 +29,15 @@ The supported HTML renderer for Clay. It receives data from [Amphora](#amphora) 
 
 It also helps get data from the server to [Kiln](#kiln) when the user is in edit mode.
 
-<hr/>
+You can get more details on our [Amphora-html documentation](https://docs.clayplatform.com/amphora-html/docs/intro)
+
+---
 
 ## Schema
 
 A schema file (either `schema.yml` or `schema.yaml`) is a declaration for how a component is edited in [Kiln](#kiln). A schema file must be present in a component's directory so that [Amphora](#amphora) can identify the component to create the necessary endpoints.
 
-<hr/>
+---
 
 ## Bootstrap _(file)_
 
@@ -51,7 +55,7 @@ A bootstrap's contents will become available at the root route for a components:
 
 > Make sure to read about [the bootstrap action](#bootstrap-action) to understand the implications this file has.
 
-<hr/>
+---
 
 ## Bootstrap _(action)_
 
@@ -59,7 +63,7 @@ When Amphora first starts up it looks into each component's directory and reads 
 
 The issue with this process is that your default instance can never be reliably manipulated in the UI because it will always reset back to the value declared in your `bootstrap.yml` file when the server restarts. **You should never reference this instance anywhere in your live pages**, it's sole purpose is to provide Kiln some starting data when creating new instances of your component.
 
-<hr/>
+---
 
 ## Instance
 
@@ -67,7 +71,7 @@ When we make a component in Clay we're really making a template that is copied o
 
 When we talk about the API for components we like to illustrate the path as follows: `/_components/<COMPONENT NAME>/instances/<INSTANCE ID>`
 
-<hr/>
+---
 
 ## Kiln
 
@@ -80,7 +84,9 @@ A user can enter edit mode in two ways:
 
 Kiln is actually just a component itself and abides by the same API's as any other component.
 
-<hr/>
+You can get more details on our [Kiln documentation](https://docs.clayplatform.com/clay-kiln/docs/intro)
+
+---
 
 ## Locals
 
@@ -94,4 +100,4 @@ This object is passed to component's model.js functions and contains information
 
 **IMPORTANT**: When using [Amphora HTML](https://github.com/clay/amphora-html) the `locals` object is available in the Handlebars templates at `@root.locals`.
 
-<hr/>
+---
