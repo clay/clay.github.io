@@ -9,6 +9,7 @@
 // site configuration options.
 
 const repoUrl = 'https://github.com/clay';
+projectName = process.env.PROJECT_NAME || 'clay';
 
 // List of projects/orgs using your project for the users page.
 const users = [];
@@ -23,7 +24,7 @@ const siteConfig = {
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: 'clay',
+  projectName,
   organizationName: 'Clay',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
