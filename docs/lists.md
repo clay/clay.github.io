@@ -56,4 +56,4 @@ Once you know the id of a list you would like to see the contents of, simply req
     ... // Truncated for brevity
 ]
 ```
-The important thing to realize is that the data in this list is arbitrary and is not something dictated by the Clay platform. The data is kept up-to-date by components as they are edited and published. This list can then turn around and be used by any component (such as a [data source for autocomplete](https://docs.clayplatform.com/clay-kiln/docs/input#simple-list)) or any external service. The content of lists are completely dictated by the implementation.
+The important thing to realize is that the data in this list is arbitrary and is not something dictated by the Clay platform. The data is kept up-to-date by components as they are edited and published. This list can then turn around and be used by any component (such as a [data source for autocomplete](https://docs.clayplatform.com/clay-kiln/docs/inputs#simple-list)) or any external service. The content of lists are completely dictated by the implementation.

@@ -40,7 +40,7 @@ _description: |
 
 ### Bootstrap.yml
 
-[This file](glossary#bootstrap-file) describes the data that all new instances of your component will start with when created using Clay's REST API. It's essential because each time Amphora starts up it will read from this file and [write this starter data](glossary#bootstrap-action) into the database.
+[This file](glossary.md#bootstrap-file) describes the data that all new instances of your component will start with when created using Clay's REST API. It's essential because each time Amphora starts up it will read from this file and [write this starter data](glossary.md#bootstrap-action) into the database.
 
 Ensure your component has a `bootstrap.yml`, here's an example:
 
@@ -65,7 +65,7 @@ Both of these functions receive the following data:
 
 - `uri` (String): the uri of the component
 - `data` (Object): the component instance's data
-- `locals` (Object): an object [containing information about the request](glossary#locals)
+- `locals` (Object): an object [containing information about the request](glossary.md#locals)
 
 Both of these functions must return _either an Object or a Promise which resolves an Object_ whose value is the data for the component. On a `save` the Object will be written to the database and on a `render` the Object will be passed to the data composer. Both the save() and render() methods are optional.
 
@@ -129,4 +129,4 @@ While this introduction covered the most common files in a component directory w
 
 Assuming you're using the [Clay starter](https://github.com/clay/clay-starter) and that your component name is `my-component`, you should be able to navigate to [`localhost/_components/my-component`](localhost/_components/my-component) and see the default data for your component.
 
-In the following pages we'll look at iterating on a component, compiling your component's assets/styles and adding your component to [component lists](https://docs.clayplatform.com/clay-kiln/docs/manipulating_components#component-lists) in other components.
+In the following pages we'll look at iterating on a component, compiling your component's assets/styles and adding your component to [component lists](https://docs.clayplatform.com/clay-kiln/docs/manipulating-components#component-lists) in other components.

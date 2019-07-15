@@ -16,7 +16,7 @@ Layouts have all the same affordances as components, but there are a few importa
 * Layouts have their own metadata
 
 ## Page Areas
-Layouts are unique because they can contain placeholders for properties on a page that are filled during composition. The areas where a page's data can be merged into the layout's data are called **page areas**. The reference to a page area is simply a string that references a [component-list on a page](pages#page-specific-data).
+Layouts are unique because they can contain placeholders for properties on a page that are filled during composition. The areas where a page's data can be merged into the layout's data are called **page areas**. The reference to a page area is simply a string that references a [component-list on a page](pages.md#page-specific-data).
 
 For example:
 
@@ -63,7 +63,7 @@ During composition of the page for rendering the data from the page will be merg
 ---
 
 ## Defining Page Areas For Editing
-While referencing data from a page works by setting a property in the layout to the same value as a component-list in the page data, there's a little more that has to be done so that Kiln knows how to edit page areas properly. For more detailed information, [see the Kiln docs](https://docs.clayplatform.com/clay-kiln/docs/intro), but below is a brief excerpt from a Layout schema that is defining a Page Area called "main".
+While referencing data from a page works by setting a property in the layout to the same value as a component-list in the page data, there's a little more that has to be done so that Kiln knows how to edit page areas properly. For more detailed information, [see the Kiln docs](https://docs.clayplatform.com/clay-kiln/docs/introduction), but below is a brief excerpt from a Layout schema that is defining a Page Area called "main".
 ```js
 main:
   _componentList:
