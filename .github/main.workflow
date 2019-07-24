@@ -11,6 +11,9 @@ action "Filter branch" {
 action "Build and push docs" {
   needs = ["Filter branch"]
   uses = "clay/docusaurus-github-action@master"
-  args="deploy"
+  args = "deploy"
+  env = {
+    PROJECT_NAME = "clay"
+  }
   secrets = ["DEPLOY_SSH_KEY"]
 }
