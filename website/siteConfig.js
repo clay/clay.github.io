@@ -95,7 +95,12 @@ const siteConfig = {
   // template. For example, if you need your repo's URL...
   //   repoUrl: 'https://github.com/facebook/test-site',
 
-  cname: 'docs.clayplatform.com'
+  cname: 'docs.clayplatform.com',
+  algolia: {
+    apiKey: process.env.ALGOLIA_API_KEY,
+    indexName: 'TBD',
+    algoliaOptions: {} // Optional, if provided by Algolia
+  }
 };
 
 module.exports = siteConfig;
