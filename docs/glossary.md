@@ -19,7 +19,7 @@ Amphora is the data composer and REST API of Clay. Its core responsibilities inc
 - Discovering each plugin available in an instance of Clay
 - Migrating component data as components iterate over time
 
-You can get more details on our [Amphora documentation](https://docs.clayplatform.com/amphora/docs/intro)
+You can get more details on our [Amphora documentation](https://docs.clayplatform.com/amphora/docs/introduction)
 
 ---
 
@@ -84,7 +84,7 @@ A user can enter edit mode in two ways:
 
 Kiln is actually just a component itself and abides by the same API's as any other component.
 
-You can get more details on our [Kiln documentation](https://docs.clayplatform.com/clay-kiln/docs/intro)
+You can get more details on our [Kiln documentation](https://docs.clayplatform.com/clay-kiln/docs/introduction)
 
 ---
 

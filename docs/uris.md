@@ -9,7 +9,7 @@ sidebar_label: Uris
 
 A uri is binding between a publicly accessible url and a specific [page](pages.md) in your Clay instance. When browsing the web you're generally navigating between human-readable URLs like www.vulture.com/movies/ or www.thecut.com/2018/08/baby-squirrel-attack-germany.html. But when you're creating and editing pages in Clay you're normally dealing with page instances with random ids, like www.thecut.com/_pages/cjko0bdjj008qi5ye57e00qyk.html. This is where uris come in.
 
-_Uris are a bridge between a public facing url and a specific page instance_. When a page is published a public url for the page is determined ([see "Publishing" in Amphora docs](https://docs.clayplatform.com/amphora/docs/publish)), and when that happens a uri is created.
+_Uris are a bridge between a public facing url and a specific page instance_. When a page is published a public url for the page is determined ([see "Publishing" in Amphora docs](https://docs.clayplatform.com/amphora/docs/publishing)), and when that happens a uri is created.
 
 ---
 
