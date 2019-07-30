@@ -8,8 +8,14 @@ action "Filter branch" {
   args = "branch develop"
 }
 
-action "Build and push docs" {
+action "Install" {
   needs = ["Filter branch"]
+  uses = "actions/npm@master"
+  args = "install --prefix ./website"
+}
+
+action "Build and push docs" {
+  needs = ["Install"]
   uses = "clay/docusaurus-github-action@master"
   args = "deploy"
   env = {
