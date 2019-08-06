@@ -21,5 +21,5 @@ action "Build and push docs" {
   env = {
     PROJECT_NAME = "clay"
   }
-  secrets = ["DEPLOY_SSH_KEY"]
+  secrets = ["DEPLOY_SSH_KEY", "ALGOLIA_API_KEY"]
 }
